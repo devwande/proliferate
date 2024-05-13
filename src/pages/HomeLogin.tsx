@@ -1,21 +1,24 @@
 import proliferate from "../assets/proliferate.svg";
 import studentImage from "../assets/images/studentImage.png";
-import vectorImage from "../assets/images/Vector.png"
+import vectorImage from "../assets/images/Vector.png";
+import fbLogo from "../assets/fbLogo.svg";
+import googleLogo from "../assets/googleLogo.svg";
+import linkedinLogo from "../assets/linkedinLogo.svg";
 import { useState } from "react";
 
-const Home = () => {
+const HomeLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleUsernameChange = (e) => {
+  const handleUsernameChange = (e: any) => {
     setUsername(e.target.value);
   };
 
-  const handlePasswordChange = (e) => {
+  const handlePasswordChange = (e: any) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Here you can perform login/authentication logic
     console.log("Username:", username);
@@ -44,7 +47,7 @@ const Home = () => {
         <h1 className="font-bold font-montserrat text-lg mb-8">
           LOGIN YOUR ACCOUNT
         </h1>
-        <form onSubmit={handleSubmit} className="flex flex-col w-64">
+        <form onSubmit={handleSubmit} className="flex flex-col w-64 space-y-5">
           <div className="flex flex-col mb-4">
             <label
               htmlFor="username"
@@ -55,10 +58,10 @@ const Home = () => {
             <input
               type="text"
               id="username"
-              placeholder="Enter your username"
+              placeholder="Enter your email address"
               value={username}
               onChange={handleUsernameChange}
-              className="bg-lightgrey border border-darkgrey rounded-lg px-4 py-2"
+              className="bg-white border border-darkgrey rounded-lg px-4 py-2"
             />
           </div>
           <div className="flex flex-col mb-4">
@@ -74,27 +77,40 @@ const Home = () => {
               placeholder="Enter your password"
               value={password}
               onChange={handlePasswordChange}
-              className="bg-lightgrey border border-darkgrey rounded-lg px-4 py-2"
+              className="bg-white border border-darkgrey rounded-lg px-4 py-2"
             />
           </div>
-          <div className="flex">
+          <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
+              className="bg-lightblue text-white font-bold py-2 px-4 rounded-full mr-4"
             >
               Login
             </button>
             <button
               type="button"
-              className="bg-red text-white font-semibold py-2 px-4 rounded"
+              className="bg-red text-white font-semibold py-2 px-4 rounded-lg flex items-center"
             >
-              Register <img src={vectorImage} alt="vector-image" />
+              Register{" "}
+              <img src={vectorImage} alt="vector-image" className="ml-2" />
             </button>
           </div>
+          <a
+            href=""
+            className="font-montserrat text-sm text-ash underline flex justify-center mb-10"
+          >
+            Forgot your password?
+          </a>
         </form>
+        <p className="font-montserrat font-black">Sign in with</p>
+        <div className="flex flex-row py-2 space-x-10">
+          <img src={fbLogo} alt="facebook logo" />
+          <img src={googleLogo} alt="google logo" />
+          <img src={linkedinLogo} alt="linkedin logo" />
+        </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default HomeLogin;

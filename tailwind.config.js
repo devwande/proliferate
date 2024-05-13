@@ -26,6 +26,9 @@ export default {
         lightgrey: "#CCCCCC",
         white: "#FFFFFF",
         red: "#DE4B18",
+        lightblue: "#1F70B2",
+        ash: "#969696",
+        
       }
     },
     fontFamily: {
