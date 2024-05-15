@@ -5,8 +5,12 @@ import fbLogo from "../assets/fbLogo.svg";
 import googleLogo from "../assets/googleLogo.svg";
 import linkedinLogo from "../assets/linkedinLogo.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const HomeLogin = () => {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -84,6 +88,9 @@ const HomeLogin = () => {
             <button
               type="submit"
               className="bg-lightblue text-white font-bold py-2 px-4 rounded-full mr-4"
+              onClick={() => {
+                navigate("/registration")
+              }}
             >
               Login
             </button>

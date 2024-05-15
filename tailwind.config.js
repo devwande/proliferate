@@ -32,7 +32,8 @@ export default {
       }
     },
     fontFamily: {
-      montserrat: ["Montserrat", "Open Sans"]
+      montserrat: ["Montserrat"],
+      opensans: ["Open Sans"]
     },
   },
   plugins: [],
