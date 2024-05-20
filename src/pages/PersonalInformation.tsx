@@ -1,6 +1,7 @@
 import asterisks from "../assets/images/prime_asteriks.png";
-import next from "../assets/images/next.png";
+
 import { useNavigate } from "react-router-dom";
+
 
 const PersonalInformation = () => {
   const navigate = useNavigate();
@@ -117,17 +118,7 @@ const PersonalInformation = () => {
         </form>
       </div>
 
-      <div className="border border-lightgrey rounded-2xl pt-4 pb-4 mt-20 mr-10 ml-10 shadow-lg pr-5 flex justify-end">
-        <button
-          className="flex items-center bg-lightblue text-white gap-10 pl-10 py-3 px-5 rounded-lg"
-          onClick={() => {
-            navigate("/academicDetails")
-          }}
-        >
-          Next
-          <img src={next} alt="next symbol" />
-        </button>
-      </div>
+      
     </>
   );
 };
