@@ -1,6 +1,5 @@
 import proliferate from "../assets/proliferate.svg";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import next from "../assets/images/next.png";
 import PersonalInformation from "./PersonalInformation";
 import AcademicDetails from "./AcademicDetails";
@@ -9,7 +8,6 @@ import LearningGoals from "./LearningGoals";
 import TermsAndConditions from "./TermsAndConditions";
 
 const Registration = () => {
-  const navigate = useNavigate();
 
   const [activeTab, setActiveTab] = useState(0);
   const handleTabClick = (index: any) => {
@@ -17,7 +15,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       {/* Logo and Title */}
       <div className="relative">
         {/* Logo */}
@@ -116,7 +114,7 @@ const Registration = () => {
       {activeTab === 5 && <TermsAndConditions />}
 
       <div
-        className={`border border-lightgrey rounded-2xl pt-4 pb-4 mt-20 mr-10 ml-10 shadow-lg pr-5 flex ${
+        className={`border border-lightgrey rounded-2xl pt-4 pb-4 mt-10 mr-10 ml-10 shadow-lg pr-5 flex ${
           activeTab === 1 ? "justify-end" : "justify-between"
         }`}
       >

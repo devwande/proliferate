@@ -1,7 +1,7 @@
 const AcademicDetails = () => {
   return (
     <>
-      <div className="flex flex-col border border-lightgrey rounded-2xl pt-4 pb-10 mt-20 mr-10 ml-10 shadow-lg">
+      <div className="flex flex-col border border-lightgrey rounded-2xl pt-4 pb-10 mr-10 ml-10 shadow-lg">
         <p className="pb-10 self-center text-center flex font-normal font-opensans content-center w-2/3">
           
           Please enter the name of your school, college, or university, along
