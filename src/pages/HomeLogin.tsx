@@ -13,15 +13,15 @@ const HomeLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleUsernameChange = (e) => {
+  const handleUsernameChange = (e: any) => {
     setUsername(e.target.value);
   };
 
-  const handlePasswordChange = (e) => {
+  const handlePasswordChange = (e: any) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Here you can perform login/authentication logic
     console.log("Username:", username);
