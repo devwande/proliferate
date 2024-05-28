@@ -1,19 +1,17 @@
 const AcademicDetails = () => {
   return (
     <>
-      <div className="flex flex-col border border-lightgrey rounded-2xl pt-4 pb-10 mr-10 ml-10 shadow-lg">
-        <p className="pb-10 self-center text-center flex font-normal font-opensans content-center w-2/3">
-          
+      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+        <p className="content-center pb-10 font-normal text-center font-opensans pr-3 pl-3">
           Please enter the name of your school, college, or university, along
           with your grade or year of study. Select the subjects you need
           tutoring for and share your current GPA or grades.
-          
         </p>
-        <form className="grid grid-rows-3 grid-flow-col gap-12 pb-12 pl-12">
+        <form className="grid gap-12 pb-12 pl-5 md:grid-rows-3 md:grid-flow-col">
           <div className="">
             <label
               htmlFor="firstname"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Grade/Year
             </label>
@@ -21,21 +19,21 @@ const AcademicDetails = () => {
               type="text"
               id="grade"
               placeholder="Enter your grade"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-2 text-sm bg-white border rounded-lg border-lightgrey w-[368px] h-[62px]"
             />
           </div>
 
           <div>
             <label
               htmlFor="subjects"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Subjects Needing Tutoring:
             </label>
 
             <select
               id="subjects"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2 w-52"
+              className="p bg-white border rounded-lg border-lightgrey w-[368px] h-[62px]"
             >
               <option value=""> </option>
               <option value="Math">Math</option>
@@ -49,14 +47,14 @@ const AcademicDetails = () => {
           <div>
             <label
               htmlFor="attendance-type"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Attendance type:
             </label>
 
             <select
               id="attendance-type"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2 w-52"
+              className=" bg-white border rounded-lg border-lightgrey w-[368px] h-[62px]"
             >
               <option value=""> </option>
               <option value="Online">Online</option>
@@ -68,7 +66,7 @@ const AcademicDetails = () => {
           <div>
             <label
               htmlFor="location"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat pb-2"
             >
               Current Location:
             </label>
@@ -76,7 +74,7 @@ const AcademicDetails = () => {
               type="location"
               id="location"
               placeholder="Enter your current location, country, state"
-              className="bg-white border  border-lightgrey rounded-lg px-4 py-2 w-96"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey text-sm w-[368px] h-[62px] md:w-96"
             />
           </div>
         </form>

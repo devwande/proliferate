@@ -1,24 +1,18 @@
 import asterisks from "../assets/images/prime_asteriks.png";
 
-import { useNavigate } from "react-router-dom";
-
-
 const PersonalInformation = () => {
-  const navigate = useNavigate();
-  
-  
   return (
     <>
-      <div className="border border-lightgrey rounded-2xl pt-4 pb-10 mt-20 mr-10 ml-10 shadow-lg">
-        <h1 className="pb-10 text-center font-normal font-opensans content-center">
+      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+        <p className="content-center pb-10 font-normal text-center font-opensans">
           Please provide your full name, email address, contact number, gender
           and age. Ensure that the information is accurate and up-to-date.
-        </h1>
-        <form className="grid grid-cols-3 gap-12 pb-12 pl-12">
+        </p>
+        <form className="grid gap-12 pl-3 pb-12 md:grid-cols-3 md:pl-10">
           <div className="">
             <label
               htmlFor="firstname"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               First Name:
               <img src={asterisks} alt="asterisks" />
@@ -27,14 +21,14 @@ const PersonalInformation = () => {
               type="text"
               id="firstname"
               placeholder="First Name"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
             />
           </div>
 
           <div className="">
             <label
               htmlFor="lastname"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Last Name:
               <img src={asterisks} alt="asterisks" />
@@ -43,14 +37,14 @@ const PersonalInformation = () => {
               type="text"
               id="lastname"
               placeholder="Last Name"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
             />
           </div>
 
           <div className="">
             <label
               htmlFor="email"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Email Address:
               <img src={asterisks} alt="asterisks" />
@@ -59,14 +53,14 @@ const PersonalInformation = () => {
               type="email"
               id="email"
               placeholder="Enter your email address"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
             />
           </div>
 
           <div className="">
             <label
               htmlFor="contact"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Contact Number:
               <img src={asterisks} alt="asterisks" />
@@ -75,21 +69,21 @@ const PersonalInformation = () => {
               type="number"
               id="lastname"
               placeholder="Last Name"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
             />
           </div>
 
           <div>
             <label
               htmlFor="gender"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Gender:
             </label>
 
             <select
               id="gender"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2 w-52"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2 md:w-52"
               //   value={country}
               //   onChange={handleCountryChange}
             >
@@ -104,7 +98,7 @@ const PersonalInformation = () => {
           <div>
             <label
               htmlFor="age"
-              className="font-montserrat font-semibold flex items-center"
+              className="flex items-center font-semibold font-montserrat"
             >
               Age:
             </label>
@@ -112,13 +106,11 @@ const PersonalInformation = () => {
               type="number"
               id="age"
               placeholder="Enter your age"
-              className="bg-white border  border-lightgrey rounded-lg px-4 py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
             />
           </div>
         </form>
       </div>
-
-      
     </>
   );
 };

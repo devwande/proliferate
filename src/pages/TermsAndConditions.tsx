@@ -1,11 +1,11 @@
 const TermsAndConditions = () => {
   return (
     <>
-      <div className="flex flex-col border border-lightgrey rounded-2xl pt-4 mr-10 ml-10 shadow-lg">
-        <p className="self-center text-center flex font-opensans font-semibold content-center">
+      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+        <p className="content-center pb-10 font-normal text-center font-opensans pr-3 pl-3">
           Terms and Conditions
         </p>
-        <p className="font-opensans font-normal text-sm pl-2">
+        <p className="font-opensans font-normal text-sm pl-5 pr-5 md:pl-2 md:pr-2">
           Welcome to Proliferate Learning Management System (LMS). Before you
           proceed with using our platform, please carefully read and understand
           the following terms and conditions:

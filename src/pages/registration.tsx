@@ -8,9 +8,8 @@ import LearningGoals from "./LearningGoals";
 import TermsAndConditions from "./TermsAndConditions";
 
 const Registration = () => {
-
   const [activeTab, setActiveTab] = useState(0);
-  const handleTabClick = (index: any) => {
+  const handleTabClick = (index) => {
     setActiveTab(index);
   };
 
@@ -22,17 +21,22 @@ const Registration = () => {
         <img
           src={proliferate}
           alt="proliferate-logo"
-          className="absolute pt-4 pl-4 w-auto h-auto"
+          className="w-1/2 h-auto pt-8 pl-8 md:absolute md:pt-20 md:pl-20 md:w-auto"
         />
-
+        {/* MOBILE TITLE */}
+        <div className="w-full mt-[20px] bg-darkblue py-4 md:hidden flex justify-center">
+          <h1 className="text-lg font-bold text-white font-montserrat">
+            Student Registration | Personal Information
+          </h1>
+        </div>
         {/* Title */}
-        <h1 className="text-3xl mt-20 mb-8 font-montserrat font-bold text-center">
+        <h1 className="hidden mt-20 mb-8 text-3xl font-bold text-center md:block font-montserrat">
           Student Registration | Personal Information
         </h1>
       </div>
 
       {/* Tabs */}
-      <section className="border-t border-b w-fit self-center border-ash">
+      <section className="self-center hidden border-t border-b md:block w-fit border-ash">
         <div className="flex justify-center">
           {/* Personal Information Tab */}
           <button
@@ -48,10 +52,7 @@ const Registration = () => {
 
           {/* Academic Details Tab */}
           <button
-            onClick={() => {
-              handleTabClick(2);
-              // navigate("/academicDetails");
-            }}
+            onClick={() => handleTabClick(2)}
             className={`px-4 py-2 border-r border-black ${
               activeTab === 2
                 ? "bg-lightblue text-white"
@@ -63,10 +64,7 @@ const Registration = () => {
 
           {/* Preferences Tab */}
           <button
-            onClick={() => {
-              handleTabClick(3);
-              // navigate("/preferences");
-            }}
+            onClick={() => handleTabClick(3)}
             className={`px-4 py-2 border-r border-black ${
               activeTab === 3
                 ? "bg-lightblue text-white"
@@ -78,10 +76,7 @@ const Registration = () => {
 
           {/* Learning Goals Tab */}
           <button
-            onClick={() => {
-              handleTabClick(4);
-              // navigate("/learningGoals");
-            }}
+            onClick={() => handleTabClick(4)}
             className={`px-4 py-2 border-r border-black ${
               activeTab === 4
                 ? "bg-lightblue text-white"
@@ -93,10 +88,7 @@ const Registration = () => {
 
           {/* Terms & Conditions Tab */}
           <button
-            onClick={() => {
-              handleTabClick(5);
-              // navigate("/termsAndConditions");
-            }}
+            onClick={() => handleTabClick(5)}
             className={`px-4 py-2 border-r border-black ${
               activeTab === 5
                 ? "bg-lightblue text-white"
@@ -114,30 +106,46 @@ const Registration = () => {
       {activeTab === 5 && <TermsAndConditions />}
 
       <div
-        className={`border border-lightgrey rounded-2xl pt-4 pb-4 mt-10 mr-10 ml-10 shadow-lg pr-5 flex ${
-          activeTab === 1 ? "justify-end" : "justify-between"
+        className={`md:border border-lightgrey rounded-2xl pt-4 pb-4 mt-10 md:mr-10 ml-10 md:shadow-lg pr-5 flex ${
+          activeTab === 1 ? "justify-end" : "justify-between space-x-12"
         }`}
       >
+        {/* MOBILE LOWER BUTTONS */}
+        {activeTab > 1 && (
+          <button
+            className="border border-blue rounded-md pl-12 pr-12 block md:hidden"
+            onClick={() => setActiveTab((prev) => prev - 1)}
+          >
+            <p className="font-semibold text-blue font-montserrat">Back</p>
+          </button>
+        )}
         <button
-          className={`border border-blue rounded-md ml-10 pl-12 pr-12 ${
-            activeTab === 1 ? "hidden" : "block"
-          }`}
-          onClick={() => {
-            setActiveTab((prev) => prev - 1);
-          }}
-        >
-          <p className="text-blue font-montserrat font-semibold">
-            Return to Previous Location
-          </p>
-        </button>
-        <button
-          className="flex items-center bg-lightblue text-white gap-10 pl-10 py-3 px-5 rounded-lg"
-          onClick={() => {
-            setActiveTab((prev) => prev + 1);
-          }}
+          className="flex items-center gap-10 px-5 py-3 pl-10 text-white rounded-lg bg-lightblue block md:hidden"
+          onClick={() => setActiveTab((prev) => prev + 1)}
         >
           Next
           <img src={next} alt="next symbol" />
+        </button>
+
+        {/* WEB LOWER BUTTONS */}
+        {activeTab > 1 && (
+          <button
+            className="border border-blue rounded-md ml-10 pl-12 pr-12 hidden md:block"
+            onClick={() => setActiveTab((prev) => prev - 1)}
+          >
+            <p className="font-semibold text-blue font-montserrat">
+              Return to Previous Location
+            </p>
+          </button>
+        )}
+        <button
+          className="flex items-center gap-10 px-7 py-3 pr-10 text-white rounded-lg bg-lightblue hidden md:flex"
+          onClick={() => setActiveTab((prev) => prev + 1)}
+        >
+          Next
+          <span>
+            <img src={next} alt="next symbol" />
+          </span>
         </button>
       </div>
     </div>

@@ -1,14 +1,14 @@
 const LearningGoals = () => {
   return (
     <>
-      <div className="flex flex-col border border-lightgrey rounded-2xl pt-4 mr-10 ml-10 shadow-lg">
-        <p className="self-center text-center flex font-normal font-opensans content-center w-2/3">
+      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+        <p className="content-center pb-10 font-normal text-center font-opensans pr-5 pl-3">
           Describe any challenges and short-term goals you want to achieve.
           Outline your long-term goals. This information will help us tailor the
           tutoring experience to meet your needs.
         </p>
 
-        <form className="pb-12 gap-12 pl-12 space-y-5">
+        <form className="pb-12 gap-12 pl-6 space-y-5">
           <div>
             <label
               htmlFor="short-term"
@@ -20,7 +20,7 @@ const LearningGoals = () => {
               name="short-term"
               id="short-term"
               placeholder="Enter your short term goal"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-16 w-1/2 "
+              className="bg-white border border-lightgrey rounded-lg px-4 py-4 w-[369px] h-[169px] "
             ></textarea>
           </div>
 
@@ -34,8 +34,8 @@ const LearningGoals = () => {
             <textarea
               name="short-term"
               id="short-term"
-              placeholder="Enter your short term goal"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-16 w-1/2 "
+              placeholder="Enter your long term goal"
+              className="bg-white border border-lightgrey rounded-lg px-4 py-4 w-[369px] h-[169px] "
             ></textarea>
           </div>
         </form>

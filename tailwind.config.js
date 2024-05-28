@@ -1,21 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "375px",
-      sm: "450px",
-      "2sm" : "530px",
-      "md" : "600px",
-      "lg" : "768px",
-      "2lg" : " 900px",
-      "xl" : "1024px",
-      "2xl" : "1200px",
-      "3xl" : "1280px",
-      "4xl" : "1440px"
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
 
     extend: {
@@ -28,14 +20,13 @@ export default {
         red: "#DE4B18",
         lightblue: "#1F70B2",
         ash: "#969696",
-        
-      }
+        darkblue: "#186BAD",
+      },
     },
     fontFamily: {
       montserrat: ["Montserrat"],
-      opensans: ["Open Sans"]
+      opensans: ["Open Sans"],
     },
   },
   plugins: [],
-}
-
+};
