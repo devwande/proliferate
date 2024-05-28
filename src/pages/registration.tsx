@@ -9,7 +9,7 @@ import TermsAndConditions from "./TermsAndConditions";
 
 const Registration = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const handleTabClick = (index) => {
+  const handleTabClick = (index: any) => {
     setActiveTab(index);
   };
 
