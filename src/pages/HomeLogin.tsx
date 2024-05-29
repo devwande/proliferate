@@ -38,7 +38,7 @@ const HomeLogin = () => {
           className="pt-8 pl-10 w-7/12"
         />
       </div>
-      <div className="flex h-screen">
+      <div className="md:flex md:h-screen">
         {/* Left side content */}
         <div className="w-1/2 hidden bg-blue md:block">
           <div className="relative">
@@ -56,7 +56,7 @@ const HomeLogin = () => {
         {/* Right side content */}
         <div className="w-full md:w-1/2 bg-white flex flex-col justify-center items-center">
           {/* Mobile Header */}
-          <div className="w-full mt-[-130px] bg-darkblue py-4 md:hidden flex justify-center items-center">
+          <div className="w-full md:mt-[-100px] bg-darkblue py-4 md:hidden flex justify-center items-center">
             <h1 className="font-bold font-montserrat text-white text-lg">
               LOGIN YOUR ACCOUNT
             </h1>
