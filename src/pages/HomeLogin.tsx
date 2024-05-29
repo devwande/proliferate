@@ -56,7 +56,7 @@ const HomeLogin = () => {
         {/* Right side content */}
         <div className="w-full md:w-1/2 bg-white flex flex-col justify-center items-center">
           {/* Mobile Header */}
-          <div className="w-full mt-[-400px] bg-darkblue py-4 md:hidden flex justify-center items-center">
+          <div className="w-full mt-[-100px] bg-darkblue py-4 md:hidden flex justify-center items-center">
             <h1 className="font-bold font-montserrat text-white text-lg">
               LOGIN YOUR ACCOUNT
             </h1>
@@ -64,7 +64,7 @@ const HomeLogin = () => {
 
           {/* Main Content */}
           <div className="w-full px-4 md:px-0 mt-8 md:mt-0 flex flex-col justify-center items-center">
-            <h1 className="hidden md:block font-bold font-montserrat text-lg mb-8">
+            <h1 className="hidden md:block font-bold font-montserrat text-2xl mb-8">
               LOGIN YOUR ACCOUNT
             </h1>
             <form
@@ -74,7 +74,7 @@ const HomeLogin = () => {
               <div className="flex flex-col mb-4">
                 <label
                   htmlFor="username"
-                  className="font-montserrat font-semibold mb-2"
+                  className="font-montserrat font-normal mb-2"
                 >
                   Username:
                 </label>
@@ -90,7 +90,7 @@ const HomeLogin = () => {
               <div className="flex flex-col mb-4">
                 <label
                   htmlFor="password"
-                  className="font-montserrat font-semibold mb-2"
+                  className="font-montserrat font-normal mb-2"
                 >
                   Password:
                 </label>
@@ -120,16 +120,20 @@ const HomeLogin = () => {
                   Register{" "}
                   <img src={vectorImage} alt="vector-image" className="ml-2" />
                 </button>
+                
               </div>
               <a
                 href="#"
-                className="font-montserrat text-sm text-ash underline flex justify-center"
+                className="font-montserrat text-sm text-ash underline flex justify-center pb-20"
               >
                 Forgot your password?
               </a>
             </form>
-            <p className="font-montserrat font-black ">Sign in with</p>
-            <div className="flex flex-row py-2 space-x-16">
+
+            <p className="font-montserrat font-normal flex">
+              Sign in with
+            </p>
+            <div className="flex flex-row space-x-16">
               <img src={fbLogo} alt="facebook logo" />
               <img src={googleLogo} alt="google logo" />
               <img src={linkedinLogo} alt="linkedin logo" />

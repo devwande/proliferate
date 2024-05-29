@@ -11,7 +11,7 @@ const Preferences = () => {
           <div>
             <label
               htmlFor="availability"
-              className="font-montserrat font-semibold flex items-center"
+              className="font-montserrat font-normal flex items-center pb-3" 
             >
               Availability:
             </label>
@@ -32,7 +32,7 @@ const Preferences = () => {
           <div>
             <label
               htmlFor="location"
-              className="font-montserrat font-semibold flex items-center"
+              className="font-montserrat font-normal flex items-center pb-3"
             >
               Additional Preferences/Requirements:
             </label>
@@ -40,14 +40,14 @@ const Preferences = () => {
               type="text"
               id="location"
               placeholder="Specify any additional preferences or requirements"
-              className="bg-white border border-lightgrey rounded-lg text-sm px-4 py-2 w-[365px] h-[92px]"
+              className="bg-white border border-lightgrey rounded-lg px-2 w-[365px] h-[92px] font-opensans font-normal text-sm"
             />
           </div>
 
           <div>
             <label
               htmlFor="communication"
-              className="font-montserrat font-semibold flex items-center"
+              className="font-montserrat font-normal flex items-center pb-3"
             >
               Communication Language:
             </label>
@@ -55,7 +55,7 @@ const Preferences = () => {
               type="text"
               id="communication"
               placeholder="Enter your preferred language"
-              className="bg-white border border-lightgrey rounded-lg px-4 py-2 w-[368px] h-[62px]"
+              className="bg-white border border-lightgrey rounded-lg px-2 w-[368px] h-[62px] font-opensans font-normal text-sm"
             />
           </div>
         </form>

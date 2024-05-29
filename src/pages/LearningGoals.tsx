@@ -12,7 +12,7 @@ const LearningGoals = () => {
           <div>
             <label
               htmlFor="short-term"
-              className="font-montserrat font-semibold flex items-center"
+              className="font-montserrat font-semibold flex items-center pb-3"
             >
               Short-term Goals:
             </label>
@@ -27,7 +27,7 @@ const LearningGoals = () => {
           <div>
             <label
               htmlFor="long-term"
-              className="font-montserrat font-semibold flex items-center"
+              className="font-montserrat font-semibold flex items-center pb-3"
             >
               Long-term Goals:
             </label>

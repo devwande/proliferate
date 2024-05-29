@@ -11,9 +11,9 @@ const AcademicDetails = () => {
           <div className="">
             <label
               htmlFor="firstname"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
-              Grade/Year
+              Grade/Year:
             </label>
             <input
               type="text"
@@ -26,7 +26,7 @@ const AcademicDetails = () => {
           <div>
             <label
               htmlFor="subjects"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Subjects Needing Tutoring:
             </label>
@@ -47,7 +47,7 @@ const AcademicDetails = () => {
           <div>
             <label
               htmlFor="attendance-type"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Attendance type:
             </label>
@@ -66,7 +66,7 @@ const AcademicDetails = () => {
           <div>
             <label
               htmlFor="location"
-              className="flex items-center font-semibold font-montserrat pb-2"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Current Location:
             </label>

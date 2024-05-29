@@ -8,7 +8,15 @@ import LearningGoals from "./LearningGoals";
 import TermsAndConditions from "./TermsAndConditions";
 
 const Registration = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const activeHeader = (value: number) => {
+    if (value === 1) return "Personal Information";
+    else if (value === 2) return "Academic Details";
+    else if (value === 3) return "Preferences";
+    else if (value === 4) return "Learning Goals";
+    else return "Terms and Conditions";
+  };
+
+  const [activeTab, setActiveTab] = useState(1);
   const handleTabClick = (index: any) => {
     setActiveTab(index);
   };
@@ -25,8 +33,8 @@ const Registration = () => {
         />
         {/* MOBILE TITLE */}
         <div className="w-full mt-[20px] bg-darkblue py-4 md:hidden flex justify-center">
-          <h1 className="text-lg font-bold text-white font-montserrat">
-            Student Registration | Personal Information
+          <h1 className="text-lg font-bold text-white font-opensans">
+            Student Registration | {activeHeader(activeTab)}
           </h1>
         </div>
         {/* Title */}
@@ -116,7 +124,7 @@ const Registration = () => {
             className="border border-blue rounded-md pl-12 pr-12 block md:hidden"
             onClick={() => setActiveTab((prev) => prev - 1)}
           >
-            <p className="font-semibold text-blue font-montserrat">Back</p>
+            <p className="font-normal text-blue font-montserrat">Back</p>
           </button>
         )}
         <button
@@ -133,7 +141,7 @@ const Registration = () => {
             className="border border-blue rounded-md ml-10 pl-12 pr-12 hidden md:block"
             onClick={() => setActiveTab((prev) => prev - 1)}
           >
-            <p className="font-semibold text-blue font-montserrat">
+            <p className="font-normal text-blue font-montserrat">
               Return to Previous Location
             </p>
           </button>

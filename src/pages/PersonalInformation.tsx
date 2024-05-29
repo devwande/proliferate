@@ -12,7 +12,7 @@ const PersonalInformation = () => {
           <div className="">
             <label
               htmlFor="firstname"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               First Name:
               <img src={asterisks} alt="asterisks" />
@@ -28,7 +28,7 @@ const PersonalInformation = () => {
           <div className="">
             <label
               htmlFor="lastname"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Last Name:
               <img src={asterisks} alt="asterisks" />
@@ -44,7 +44,7 @@ const PersonalInformation = () => {
           <div className="">
             <label
               htmlFor="email"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Email Address:
               <img src={asterisks} alt="asterisks" />
@@ -60,7 +60,7 @@ const PersonalInformation = () => {
           <div className="">
             <label
               htmlFor="contact"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Contact Number:
               <img src={asterisks} alt="asterisks" />
@@ -76,7 +76,7 @@ const PersonalInformation = () => {
           <div>
             <label
               htmlFor="gender"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Gender:
             </label>
@@ -98,7 +98,7 @@ const PersonalInformation = () => {
           <div>
             <label
               htmlFor="age"
-              className="flex items-center font-semibold font-montserrat"
+              className="flex items-center font-normal font-montserrat pb-3"
             >
               Age:
             </label>
