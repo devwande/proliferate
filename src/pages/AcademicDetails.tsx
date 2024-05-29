@@ -1,13 +1,13 @@
 const AcademicDetails = () => {
   return (
     <>
-      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+      <div className="lg:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 lg:mt-auto lg:mr-10 lg:ml-10 lg:shadow-lg">
         <p className="content-center pb-10 font-normal text-center font-opensans pr-3 pl-3">
           Please enter the name of your school, college, or university, along
           with your grade or year of study. Select the subjects you need
           tutoring for and share your current GPA or grades.
         </p>
-        <form className="grid gap-12 pb-12 pl-5 md:grid-rows-3 md:grid-flow-col">
+        <form className="grid gap-12 pb-12 pl-5 lg:grid-rows-3 lg:grid-flow-col">
           <div className="">
             <label
               htmlFor="firstname"
@@ -74,7 +74,7 @@ const AcademicDetails = () => {
               type="location"
               id="location"
               placeholder="Enter your current location, country, state"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey text-sm w-[368px] h-[62px] md:w-96"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey text-sm w-[368px] h-[62px] lg:w-96"
             />
           </div>
         </form>

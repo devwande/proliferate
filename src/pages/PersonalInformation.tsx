@@ -3,12 +3,12 @@ import asterisks from "../assets/images/prime_asteriks.png";
 const PersonalInformation = () => {
   return (
     <>
-      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+      <div className="lg:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 lg:mt-auto lg:mr-10 lg:ml-10 lg:shadow-lg">
         <p className="content-center pb-10 font-normal text-center font-opensans">
           Please provide your full name, email address, contact number, gender
           and age. Ensure that the information is accurate and up-to-date.
         </p>
-        <form className="grid gap-12 pl-3 pb-12 md:grid-cols-3 md:pl-10">
+        <form className="grid gap-12 pl-3 pb-12 lg:grid-cols-3 lg:pl-10">
           <div className="">
             <label
               htmlFor="firstname"
@@ -21,7 +21,7 @@ const PersonalInformation = () => {
               type="text"
               id="firstname"
               placeholder="First Name"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2"
             />
           </div>
 
@@ -37,7 +37,7 @@ const PersonalInformation = () => {
               type="text"
               id="lastname"
               placeholder="Last Name"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2"
             />
           </div>
 
@@ -53,7 +53,7 @@ const PersonalInformation = () => {
               type="email"
               id="email"
               placeholder="Enter your email address"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2"
             />
           </div>
 
@@ -69,7 +69,7 @@ const PersonalInformation = () => {
               type="number"
               id="lastname"
               placeholder="Last Name"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2"
             />
           </div>
 
@@ -83,7 +83,7 @@ const PersonalInformation = () => {
 
             <select
               id="gender"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2 md:w-52"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2 lg:w-52"
               //   value={country}
               //   onChange={handleCountryChange}
             >
@@ -106,7 +106,7 @@ const PersonalInformation = () => {
               type="number"
               id="age"
               placeholder="Enter your age"
-              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] md:px-4 md:py-2"
+              className="px-4 py-4 bg-white border rounded-lg border-lightgrey w-[368px] h-[62px] lg:px-4 lg:py-2"
             />
           </div>
         </form>

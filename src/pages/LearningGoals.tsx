@@ -1,7 +1,7 @@
 const LearningGoals = () => {
   return (
     <>
-      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+      <div className="lg:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 lg:mt-auto lg:mr-10 lg:ml-10 lg:shadow-lg">
         <p className="content-center pb-10 font-normal text-center font-opensans pr-5 pl-3">
           Describe any challenges and short-term goals you want to achieve.
           Outline your long-term goals. This information will help us tailor the

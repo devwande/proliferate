@@ -29,22 +29,22 @@ const Registration = () => {
         <img
           src={proliferate}
           alt="proliferate-logo"
-          className="w-1/2 h-auto pt-8 pl-8 md:absolute md:pt-20 md:pl-20 md:w-auto"
+          className="w-1/2 h-auto pt-8 pl-8 lg:absolute lg:pt-20 lg:pl-20 lg:w-auto"
         />
         {/* MOBILE TITLE */}
-        <div className="w-full mt-[20px] bg-darkblue py-4 md:hidden flex justify-center">
+        <div className="w-full mt-[20px] bg-darkblue py-4 lg:hidden flex justify-center">
           <h1 className="text-lg font-bold text-white font-opensans">
             Student Registration | {activeHeader(activeTab)}
           </h1>
         </div>
         {/* Title */}
-        <h1 className="hidden mt-20 mb-8 text-3xl font-bold text-center md:block font-montserrat">
+        <h1 className="hidden mt-20 mb-8 text-3xl font-bold text-center lg:block font-montserrat">
           Student Registration | Personal Information
         </h1>
       </div>
 
       {/* Tabs */}
-      <section className="self-center hidden border-t border-b md:block w-fit border-ash">
+      <section className="self-center hidden border-t border-b lg:block w-fit border-ash">
         <div className="flex justify-center">
           {/* Personal Information Tab */}
           <button
@@ -114,21 +114,21 @@ const Registration = () => {
       {activeTab === 5 && <TermsAndConditions />}
 
       <div
-        className={`md:border border-lightgrey rounded-2xl pt-4 pb-4 mt-10 md:mr-10 ml-10 md:shadow-lg pr-5 flex ${
+        className={`lg:border border-lightgrey rounded-2xl pt-4 pb-4 mt-10 lg:mr-10 ml-10 lg:shadow-lg pr-5 flex ${
           activeTab === 1 ? "justify-end" : "justify-between space-x-12"
         }`}
       >
         {/* MOBILE LOWER BUTTONS */}
         {activeTab > 1 && (
           <button
-            className="border border-blue rounded-md pl-12 pr-12 block md:hidden"
+            className="border border-blue rounded-lg pl-12 pr-12 block lg:hidden"
             onClick={() => setActiveTab((prev) => prev - 1)}
           >
             <p className="font-normal text-blue font-montserrat">Back</p>
           </button>
         )}
         <button
-          className="flex items-center gap-10 px-5 py-3 pl-10 text-white rounded-lg bg-lightblue block md:hidden"
+          className="flex items-center gap-10 px-5 py-3 pl-10 text-white rounded-lg bg-lightblue block lg:hidden"
           onClick={() => setActiveTab((prev) => prev + 1)}
         >
           Next
@@ -138,7 +138,7 @@ const Registration = () => {
         {/* WEB LOWER BUTTONS */}
         {activeTab > 1 && (
           <button
-            className="border border-blue rounded-md ml-10 pl-12 pr-12 hidden md:block"
+            className="border border-blue rounded-lg ml-10 pl-12 pr-12 hidden lg:block"
             onClick={() => setActiveTab((prev) => prev - 1)}
           >
             <p className="font-normal text-blue font-montserrat">
@@ -147,7 +147,7 @@ const Registration = () => {
           </button>
         )}
         <button
-          className="flex items-center gap-10 px-7 py-3 pr-10 text-white rounded-lg bg-lightblue hidden md:flex"
+          className="flex items-center gap-10 px-7 py-3 pr-10 text-white rounded-lg bg-lightblue hidden lg:flex"
           onClick={() => setActiveTab((prev) => prev + 1)}
         >
           Next

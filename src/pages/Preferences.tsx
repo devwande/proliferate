@@ -1,13 +1,13 @@
 const Preferences = () => {
   return (
     <>
-      <div className="md:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 md:mt-auto md:mr-10 md:ml-10 md:shadow-lg">
+      <div className="lg:border mt-[-5px] border-lightgrey rounded-2xl pt-4 pb-10 lg:mt-auto lg:mr-10 lg:ml-10 lg:shadow-lg">
         <p className="content-center pb-10 font-normal text-center font-opensans pr-3 pl-3">
           Choose whether you prefer online or in-person tutoring and specify
           your availability for sessions. You can also mention any additional
           preferences or requirements you have for the tutoring sessions.
         </p>
-        <form className="grid grid-rows-3 grid-flow-col gap-12 pl-7 pb-12 md:pl-12">
+        <form className="grid grid-rows-3 grid-flow-col gap-12 pl-7 pb-12 lg:pl-12">
           <div>
             <label
               htmlFor="availability"
